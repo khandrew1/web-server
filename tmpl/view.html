@@ -1,0 +1,6 @@
+<h1>{{.Title}}</h1>
+
+<p>[<a href="/edit/{{.Title}}">edit</a>]</p>
+
+<!--This printf is necessacary as it allows us to output .Body as a string instead of bytes-->
+<div>{{printf "%s" .Body}}</div>
